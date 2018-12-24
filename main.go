@@ -9,8 +9,8 @@ import (
 func main() {
 	argsNum := len(os.Args)
 	if argsNum < 2 {
-		report("缺少参数：目的网址或ip")
-		return
+		report("参数错误：缺少目的地址")
+		os.Exit(0)
 	}
 	var (
 		host     = os.Args[1]
